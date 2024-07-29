@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Janel cruz</title>
+  <!-- CDN de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- CDN de FontAwesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #000000;
+    }
+    .navbar {
+      background-color: #3f89d3;
+    }
+    .navbar a {
+      color: #fff;
+    }
+    .profile-img {
+      border-radius: 50%;
+      animation: heartbeat 1.5s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .embed-responsive-16by9 {
+      border-radius: 15px;
+    }
+    .form-control {
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #3a7ec2;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Janel cruz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#profile">Perfil</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Sección del Perfil -->
+<section id="profile" class="container text-center mt-5 pt-5">
+  <h2>Desarrollador Frontend (UI/UX)</h2>
+  <img src="images/trabajo.png" alt="Janel cruz" class="profile-img my-4">
+  <p><strong>Janel cruz</strong></p>
+  <p>Ingeniero en Sistemas y Computación | Auxilar de ceguridad | Tecnico de CCTV|Tecnico de Redes y Comunicaciones</p>
+</section>
+
+<!-- Sección de Proyectos -->
+<section id="projects" class="container mt-5">
+  <h2 class="text-center">Proyectos</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/ingeniero.png" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 1</h5>
+          <p class="card-text">Descripción del Proyecto 1.</p>
+          <a href="#" class="btn btn-primary">Ver más...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/optica.png" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 2</h5>
+          <p class="card-text">Descripción del Proyecto 2.</p>
+          <a href="#" class="btn btn-primary">Ver más...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/programa.png" class="card-img-top" alt="Proyecto 3">
+        <div class="card-body">
+          <h5 class="card-title">Proyecto 3</h5>
+          <p class="card-text">Descripción del Proyecto 3.</p>
+          <a href="#" class="btn btn-primary">Ver más...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Videos -->
+<section id="videos" class="container mt-5">
+  <h2 class="text-center">Videos</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-NqZjl0oysE" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 1</h5>
+          <p class="card-text">Descripción del Video 1.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ml_y8nbBBoM" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 2</h5>
+          <p class="card-text">Descripción del Video 2.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HYT6Q8AsQKc" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 3</h5>
+          <p class="card-text">Descripción del Video 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contact" class="container mt-5">
+  <h2 class="text-center">Contacto</h2>
+  <form class="mx-auto" style="max-width: 600px;">
+    <input type="text" class="form-control" placeholder="Nombre">
+    <input type="email" class="form-control" placeholder="Correo Electrónico">
+    <input type="text" class="form-control" placeholder="Asunto">
+    <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5">
+  <p>&copy; 2024 Janel cruz</p>
+  <a href="https://www.facebook.com/janeldejesus.cruz/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://x.com/JCruz64916" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/janel-cruz-50200231b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
