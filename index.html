@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Janel Cruz</title>
+  <!-- CDN de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- CDN de FontAwesome para los iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #000000;
+    }
+    .navbar {
+      background-color: #3f89d3;
+    }
+    .navbar a {
+      color: #fff;
+    }
+    .profile-img {
+      border-radius: 50%;
+      animation: heartbeat 1.5s infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .embed-responsive-16by9 {
+      border-radius: 15px;
+    }
+    .form-control {
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #3a7ec2;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+    .project-text {
+      height: 100px; /* Ajusta esta altura según tu diseño */
+      overflow: hidden;
+    }
+    .project-text.collapsed {
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Janel Cruz</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#profile">Perfil</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Sección del Perfil -->
+<section id="profile" class="container text-center mt-5 pt-5">
+  <h2>Desarrollador Frontend (UI/UX)</h2>
+  <img src="images/trabajo.png" alt="Janel Cruz" class="profile-img my-4">
+  <p><strong>Janel Cruz</strong></p>
+  <p>Ingeniero en Sistemas y Computación | Auxilar de seguridad | Técnico de CCTV | Técnico de Redes y Comunicaciones</p>
+</section>
+
+<!-- Sección de Proyectos -->
+<section id="projects" class="container mt-5">
+  <h2 class="text-center">Proyectos</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/ingeniero.png" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+          <h5 class="card-title">Calculadora Fibonacci</h5>
+          <div class="project-text" data-project="1">
+            <p class="card-text">Una calculadora Fibonacci es una herramienta o programa diseñado para calcular y mostrar los números de la secuencia de Fibonacci. La secuencia de Fibonacci es una serie de números donde cada número es la suma de los dos anteriores, comenzando con 0 y 1. Por ejemplo, los primeros números de Fibonacci son 0, 1, 1, 2, 3, 5, 8, 13, 21, etc. Usos de una Calculadora Fibonacci
+              Educativos: Ayuda a estudiantes y personas interesadas en matemáticas a entender cómo se genera la secuencia.
+              Desarrollo de Software: Útil para desarrollar algoritmos y aprender sobre la eficiencia del código.
+              Análisis de Algoritmos: Permite estudiar la complejidad computacional y comparar diferentes métodos para calcular la secuencia.
+              Cómo Funciona una Calculadora Fibonacci
+              Una calculadora Fibonacci puede estar implementada en varios lenguajes de programación y puede utilizar diferentes enfoques para calcular la secuencia, tales como:
+              
+              Iterativa: Utiliza un bucle para calcular cada número de la secuencia hasta llegar al deseado.
+              Recursiva: Llama a la misma función repetidamente para calcular los números, aunque este método puede ser ineficiente para números grandes.
+              Optimización Dinámica: Almacena los resultados de cálculos previos para evitar recalcular los mismos valores, mejorando así la eficiencia.</p>
+          </div>
+          <a href="#" class="btn btn-primary see-more" data-project="1">Ver más...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/optica.png" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+          <h5 class="card-title">Portafolio Web</h5>
+          <div class="project-text" data-project="2">
+            <p class="card-text">Un portafolio web es un sitio web personal que muestra tu trabajo, habilidades y experiencia. Está diseñado para dar a los visitantes, como posibles empleadores, clientes o colegas, una visión clara de tus capacidades y logros. Es una herramienta muy útil para profesionales en diversos campos, como diseño gráfico, desarrollo web, fotografía, escritura, entre otros.
+
+              Componentes de un Portafolio Web
+              Un portafolio web típicamente incluye las siguientes secciones:
+              
+              Inicio (Home):
+              
+              Introducción breve sobre ti.
+              Imagen o video destacado.
+              Resumen de lo que haces.
+              Sobre mí (About Me):
+              
+              Información detallada sobre tu experiencia, habilidades, educación y objetivos profesionales.
+              Foto profesional.
+              Currículum descargable (opcional).
+              Proyectos (Projects):
+              
+              Galería de tus proyectos anteriores.
+              Descripciones detalladas de cada proyecto, incluyendo tus roles, tecnologías utilizadas y resultados.
+              Imágenes, videos o enlaces a los proyectos.
+              Blog (opcional):
+              
+              Artículos y publicaciones que demuestran tu conocimiento y pensamiento en tu campo.
+              Contacto (Contact):
+              
+              Formulario de contacto.
+              Información de contacto (email, teléfono).
+              Enlaces a tus redes sociales.
+              Testimonios (opcional):
+              
+              Comentarios de clientes o colegas que respalden tu trabajo y ética profesional.
+              Beneficios de un Portafolio Web
+              Visibilidad: Te permite mostrar tu trabajo a una audiencia global.
+              Profesionalismo: Demuestra tu compromiso y dedicación a tu carrera.
+              Accesibilidad: Potenciales empleadores o clientes pueden revisar tu trabajo en cualquier momento.
+              Marca Personal: Ayuda a construir y reforzar tu marca personal.
+              Actualización Continua: Puedes actualizar tu portafolio con nuevos proyectos y logros en cualquier momento.</p>
+          </div>
+          <a href="#" class="btn btn-primary see-more" data-project="2">Ver más...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/programa.png" class="card-img-top" alt="Proyecto 3">
+        <div class="card-body">
+          <h5 class="card-title">Creación de Acceso Directo</h5>
+          <div class="project-text" data-project="3">
+            <p class="card-text">Un login es un proceso de autenticación que permite a los usuarios acceder a un sistema, sitio web o aplicación proporcionando sus credenciales, generalmente un nombre de usuario y una contraseña. Este proceso verifica que el usuario es quien dice ser y le otorga acceso a recursos, datos o funciones que de otro modo estarían restringidos.
+
+              Componentes de un Login
+              Formulario de Login:
+              
+              Campo de Usuario: Donde el usuario ingresa su nombre de usuario o correo electrónico.
+              Campo de Contraseña: Donde el usuario ingresa su contraseña.
+              Botón de Enviar: Para enviar las credenciales al servidor para su verificación.
+              Validación del Lado del Cliente:
+              
+              Verifica que ambos campos no estén vacíos.
+              Puede incluir verificaciones adicionales como el formato del correo electrónico.
+              Proceso de Autenticación del Lado del Servidor:
+              
+              Verifica las credenciales enviadas contra una base de datos o servicio de autenticación.
+              Si las credenciales son correctas, se crea una sesión para el usuario.
+              Si las credenciales son incorrectas, se devuelve un mensaje de error.
+              Manejo de Sesión:
+              
+              Una vez autenticado, se establece una sesión para el usuario.
+              Las sesiones pueden ser manejadas mediante cookies, tokens (como JWT) u otros métodos.</p>
+          </div>
+          <a href="#" class="btn btn-primary see-more" data-project="3">Ver más...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Videos -->
+<section id="videos" class="container mt-5">
+  <h2 class="text-center">Videos</h2>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-NqZjl0oysE" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 1</h5>
+          <p class="card-text">Descripción del Video 1.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ml_y8nbBBoM" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 2</h5>
+          <p class="card-text">Descripción del Video 2.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HYT6Q8AsQKc" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Video 3</h5>
+          <p class="card-text">Descripción del Video 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contact" class="container mt-5">
+  <h2 class="text-center">Contacto</h2>
+  <form class="mx-auto" style="max-width: 600px;">
+    <input type="text" class="form-control" placeholder="Nombre">
+    <input type="email" class="form-control" placeholder="Correo Electrónico">
+    <input type="text" class="form-control" placeholder="Asunto">
+    <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5">
+  <p>&copy; 2024 Janel Cruz</p>
+  <a href="https://www.facebook.com/janeldejesus.cruz/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://x.com/JCruz64916" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/janel-cruz-50200231b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const seeMoreButtons = document.querySelectorAll('.see-more');
+    seeMoreButtons.forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        const project = this.dataset.project;
+        const projectText = document.querySelector(`.project-text[data-project="${project}"]`);
+        projectText.classList.toggle('collapsed');
+        if (projectText.classList.contains('collapsed')) {
+          this.textContent = 'Ver más...';
+        } else {
+          this.textContent = 'Ver menos';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
